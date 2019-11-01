@@ -2,7 +2,7 @@
 .eslintcache
 .idea
 coverage
-es
-lib
+# es
+# lib
 node_modules
 npm-debug.log

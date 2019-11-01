@@ -471,7 +471,7 @@ const updateTags = (type, tags) => {
     }
 
     oldTags.forEach(tag => tag.parentNode.removeChild(tag));
-    newTags.forEach(tag => headElement.appendChild(tag));
+    newTags.forEach(tag => headElement.getElementsByTagName('link')[0].insertAdjacentElement("beforebegin", tag));
 
     return {
         oldTags,
